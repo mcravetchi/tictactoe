@@ -104,18 +104,21 @@ int main(){
 	}
 	printBoard(board);
 	if(checkWin(board)=='W' && player == 1){ //if the checkwin returns the W char, for X
+	  player = 0;
 	  xWins++;
 	  fillOut = false;
 	  cout<<"X WINS! They have " << xWins << " wins so far. O has " << oWins << " in comparison" <<endl;
 	  cout<<"Would you like to replay? 0 for no, 1 for yes" << endl;
 	  cin >> replay;
 	} else if (checkWin(board)=='W' && player == 0) { //if the checkwin returns the W char, for O
+	  player=0;
 	  oWins++;
 	  fillOut = false;
 	  cout<<"O WINS! They have " << oWins << " wins so far. X has " << xWins << " in comparison"<< endl;
 	  cout<<"Would you like to replay? 0 for no, 1 for yes" << endl;
 	  cin>>replay;
 	} else if(checkTie(board)=='T'){ //if the checkwin returns the T Char for tie
+	  player = 0;
 	  fillOut = false;
 	  cout<<"THE GAME IS A TIE! X and O have "<< xWins << " and " << oWins << " wins respectively"<< endl;
 	  cout<<"Would you like to replay? 0 for no, 1 for yes"<<endl;
