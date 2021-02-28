@@ -1,0 +1,16 @@
+/* 
+Max Cravetchi
+Mr. Galbraith
+C++ Programming
+
+This program prints out a tic tac toe board.
+It is a two player tic tac toe game.
+First to get three in a row wins.
+ */
+
+
+
+#include <iostream>
+#include <cstring>
+#include <cctype>
+using namespace std;
